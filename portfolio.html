@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+    <div class="profile-container flex-vert">
+        <div class="flex nameint">
+            <div class="Name_intro flex-vert">
+                <h2 id="name"></h2>
+                <p id="words"></p>
+            </div>
+            <div class="profile-photo">
+                <img id="profile-photo" alt="Profile Photo">
+            </div>
+        </div>
+        <div class="flex-vert personal">
+            <h1>Personal Information</h1>
+            <p id="city"></p>
+            <p id="dob"></p>
+            <div class="flex contact">
+                <div>
+                    <p>Contact Info: </p>
+                </div>
+                <div>
+                    <div class="flex continf"><div><p class="black">Email-id : </p></div><p id="email"></p></div>
+                    <div class="flex continf"><div><p class="black">Mobile No. </p></div><p id="mobile"></p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-vert edu">
+            <h1 class="collapsible">Education</h1>
+            <div class="content">
+                <div id="education-list"></div>
+            </div>
+        </div>
+
+        <div class="flex-vert skill">
+            <h1 class="collapsible">Skills and Proficiencies</h1>
+            <div class="content">
+                <div id="Skills"></div>
+            </div>
+        </div>
+
+        <div class="flex-vert links">
+            <h1 class="collapsible">My Links</h1>
+            <div class="content">
+                <div id="link-list"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./pscript.js"></script>
+</body>
+</html>

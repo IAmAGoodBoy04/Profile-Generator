@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Input form</title>
+</head>
+<body>
+    <template id="eblk">
+        <div class="eblock flex delfield education-entry">
+            <button class="rem"><img src="./resources/minus-frame-svgrepo-com.svg" alt="remove"></button>
+            <input type="text" name="degree/certificate" class="req education" placeholder="Degree/Certificate">
+            <input type="text" name="institute" class="req education" placeholder="Institute">
+            <input type="text" name="year" class="req education" placeholder="Year">
+            <span>
+            <span>Performance: </span>
+                <input type="text" class="req education" name="number_field" placeholder="Performance">
+                <select name="Criteria" placeholder="Performance Unit">
+                    <option value="percentage">%age</option>
+                    <option value="percentile">%ile</option>
+                    <option value="rank">rank</option>
+                    <option value="CGPA">CGPA</option>
+                </select>
+            </span>
+        </div>
+    </template>
+    <template id="pblk">
+        <div class="delfield flex project-entry">
+            <button class="rem proj"><img src="./resources/minus-frame-svgrepo-com.svg" alt="remove"></button>
+            <div class="flex-vert">
+                <div class="flex">
+                    <input type="text" class="req" name="category" placeholder="Category">
+                    <input type="text" class="req" name="list items" placeholder="List-items">
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="lblk">
+        <div class="delfield flex link-entry">
+            <button class="rem"><img src="./resources/minus-frame-svgrepo-com.svg" alt="remove"></button>
+            <input type="text" class="req" name="website name" placeholder="Website name">
+            <input type="text" class="req purl" name="url" placeholder="Profile URL">
+        </div>
+    </template>
+
+    <h1>Input Form</h1>
+    <div class="outer_cont">
+        <p class="warning">* All fields are mandatory</p>
+        <h2>Personal Information</h2>
+        <div class="flex left">
+            <div class="cont">
+                <input type="text" class="req" name="first name" placeholder="First name">
+                <input type="text" class="req" name="last name" placeholder="Last name">
+            </div>
+            <input type="text" class="req block" name="email id" placeholder="Email-id">
+            <div class="cont">
+                <input type="text" class="req" name="mobile no." placeholder="Mobile No.">
+                <input type="text" class="req" name="city" placeholder="City of residence">
+            </div>
+            <input type="text" class="req block" name="description words" placeholder="Words that describe you (like engineer, student, etc.)">
+            <div class="flex">
+                <label for="dob">Date of Birth : </label>
+                <input type="date" name="dob" id="dob" name="date of birth" placeholder="Date of Birth">
+            </div>
+            <div class="flex">
+                <label for="profile_photo">Profile Photo :</label>
+                <input type="file" class="finput proj req" name="profile_photo" accept="image/*">
+                <img id="previewImage" class="preview" src="" alt="Image Preview" style="display: none; width: 100px; height: auto;">
+            </div>
+        </div>
+        <h2 class="collapsible">Education</h2>
+        <button class="block" id="Edbutton">+ Add Education</button>
+        <div id="edblock" class="flex-vert"></div>
+        <h2 class="collapsible">Skills and Proficiencies</h2>
+        <button class="block" id="Pbutton">+ Add Skill</button>
+        <div id="pblock" class="flex-vert"></div>
+        <h2 class="collapsible">Links</h2>
+        <button class="block" id="Lbutton">+ Add Link</button>
+        <div id="lblock" class="flex-vert"></div>
+        
+        <button id="Next" class="block">NEXT</button>
+
+    </div>
+
+    <script src="./source.js"></script>
+</body>
+</html>

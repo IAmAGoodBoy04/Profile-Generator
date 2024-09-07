@@ -1,0 +1,199 @@
+/* Background image for the entire page */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./resources/abstract-purple-pink-cloud_53876-139896.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header styling */
+header {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Profile container styling */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile photo styling */
+.profile-photo img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Profile info styling */
+.profile-info {
+    padding: 50px;
+    text-align: center;
+}
+
+
+.Name_intro h2 {
+    margin: 10px 0;
+    font-size: 65px;
+    background: linear-gradient(to right, #6a5acd, #00bfff);
+    background-clip: text;
+    color: transparent;
+    text-wrap:wrap;
+}
+
+.Name_intro p{
+    font-size: 30px;
+}
+
+.nameint{
+    margin-top: 25px;
+}
+
+.continf{
+    column-gap: 20px;
+}
+.black{
+    background: none;
+    color: initial;
+}
+
+.flex-vert{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact{
+    column-gap: 25px;
+}
+
+p{
+    font-size: 20px;
+    background: linear-gradient(to right, #228B22, #5F9EA0);
+    background-clip: text;
+    color: transparent;
+}
+
+header h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #6a5acd, #00bfff);
+    background-clip: text;
+    color: transparent;
+}
+
+h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #ff69b4, #8a2be2);
+    background-clip: text;
+    color: transparent;
+}
+
+.personal{
+    width: 800px;
+    align-items: flex-start;
+}
+
+.personal h1{
+    text-align: left;
+}
+.edu,.links,.skill{
+    width: 800px;
+}
+
+.edu,.links,.skill h1{
+    text-align: left;
+}
+
+
+.nameint{
+    justify-content: space-between;
+    column-gap: 20px;
+    width: 800px;
+    flex-wrap: nowrap;
+}
+
+.Name_intro{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.education-entry,.skill-entry{
+    background: linear-gradient(to right, #ff7f50, #ff1493);
+    background-clip: text;
+    color: transparent;
+}
+
+.education-entry, .skill-entry, .link-entry {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+.link-list img{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 0 18px;
+    display: block;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.listitemdiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    font-size: 20px;
+    background: linear-gradient(to right, #228B22, #5F9EA0);
+    background-clip: text;
+    color: transparent;
+}

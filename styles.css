@@ -1,0 +1,122 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+body {
+    background-image: url('./resources/download.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input.block{
+    width: 500px;
+}
+
+.inline{
+    display: inline;
+}
+
+.rem img{
+    width: 1.3em;
+    height: 1.3em;
+    pointer-events: none;
+}
+.rem{
+    display: flex;
+    width: 2em;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px;
+}
+
+.outer_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.flex.left{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.block{
+    display: block;
+}
+.flex-vert{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.flex{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+button{
+    width: 150px;
+}
+
+
+
+.warning{
+    color: red;
+    font-size: small;
+}
+
+#Next{
+    margin-top: 30px;
+    height: 40px;
+    width: 80px;
+    background-color: lightskyblue;
+}
+
+.purl{
+    width: 400px;
+}
+
+button.block{
+    background-color: transparent;
+    border: lightblue 2px solid;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+button.block:hover {
+    background-color: lightskyblue;
+}
+
+#Next:hover{
+    background-color: lightpink;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #6a5acd, #00bfff);
+    outline: none;
+}
+
+.education-entry, .project-entry, .link-entry {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    background: linear-gradient(to right, #6a5acd, #00bfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
